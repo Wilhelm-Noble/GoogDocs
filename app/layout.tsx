@@ -1,3 +1,4 @@
+import "./globals.css"
 import { Inter as FontSans } from "next/font/google"
 
 import { cn } from "@/lib/utils"
@@ -11,6 +12,7 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
 
 export const metadata: Metadata = {
   title: 'LiveDocs',
@@ -26,9 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fontSans.variable
           )}
         >
-          <Provider>
             {children}
-          </Provider>
         </body>
       </html>
   )
