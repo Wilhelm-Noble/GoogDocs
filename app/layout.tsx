@@ -15,12 +15,21 @@ const fontSans = FontSans({
 
 
 export const metadata: Metadata = {
-  title: 'LiveDocs',
-  description: 'Your go-to collaborative editor',
+  title: 'NextDocs',
+  description: 'Real-Time Editor for Modern Teams',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: {
+          colorPrimary:'#3371FF',
+          fontSize: '16px'
+        },
+        // Customize appearance settings here
+      }}>
       <html lang="en" suppressHydrationWarning>
         <body
           className={cn(
@@ -31,5 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
         </body>
       </html>
+    </ClerkProvider>
   )
 }
