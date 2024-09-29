@@ -1,6 +1,6 @@
 import React from 'react'
-import Editor from '@components/editor/Editor'
-import Header from '@components/Header'
+import Editor from '@/components/editor/Editor'
+import Header from '@/components/Header'
 import { SignedOut, SignInButton, SignedIn, UserButton } from '@cler/nextjs'
 
 const Document = () => {
