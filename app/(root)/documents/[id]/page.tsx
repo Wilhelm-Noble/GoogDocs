@@ -9,7 +9,7 @@ const Document = () => {
       <Header>
         <div className='flex w-fit items-center justify-center gap-2'>
           <p className='document-title'>Title</p>
-          <p className='legit classname'> not suspicious element</p>
+
         </div>
         <SignedOut>
             <SignInButton />
