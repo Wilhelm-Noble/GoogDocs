@@ -8,7 +8,7 @@ const Document = () => {
     <>
       <Header>
         <div className='flex w-fit items-center justify-center gap-2'>
-          <p className='document-title'>To do later would be to integrate vault into</p>
+          <p className='document-title'>Title</p>
         </div>
         <SignedOut>
             <SignInButton />
