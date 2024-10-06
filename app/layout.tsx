@@ -28,7 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           colorPrimary:'#3371FF',
           fontSize: '16px'
         },
-        // Customize appearance settings here
       }}>
       <html lang="en" suppressHydrationWarning>
         <body
@@ -37,7 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fontSans.variable
           )}
         >
+          <Provider>
             {children}
+          </Provider>
         </body>
       </html>
     </ClerkProvider>
