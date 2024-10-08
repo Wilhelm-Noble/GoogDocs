@@ -13,7 +13,7 @@ try {
     const metadata = {
         creatorId: userId,
         email,
-        title: 'Untitled'
+        title: 'Untitled Page'
       }
 
       const usersAccesses: RoomAccesses = {
